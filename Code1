@@ -2,7 +2,6 @@ def calculate_delivery_fee(distance, rate):
     total_fee = distance * rate
     return total_fee
 
-# Ask user for input
 distance = float(input("Enter distance in kilometers: "))
 rate = float(input("Enter rate per kilometer (₱): "))
 
