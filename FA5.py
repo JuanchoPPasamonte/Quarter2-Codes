@@ -1,0 +1,25 @@
+def main():
+    destinations = []
+    print("Please enter your 5 travel destinations:")
+    for i in range(5):
+        place = input(f"Destination {i + 1}: ")
+        destinations.append(place)
+    print("Travel Itinerary:")
+    for i in range(5):
+        print(f"{i + 1}. {destinations[i]}")
+    print("\nUpdate your destinations if you want. View this as conformation or change.")
+    new_dest_1 = input("Enter the same or new destination for position 1: ")
+    destinations[0] = new_dest_1
+    new_dest_2 = input("Enter the same or new destination for position 2: ")
+    destinations[1] = new_dest_2
+    new_dest_3 = input("Enter the same or new destination for position 3: ")
+    destinations[2] = new_dest_3
+    new_dest_4 = input("Enter the same or new destination for position 4: ")
+    destinations[3] = new_dest_4
+    new_dest_5 = input("Enter the same or new destination for position 5: ")
+    destinations[1] = new_dest_5
+    print("Current Travel Itinerary:")
+    for i in range(5):
+        print(f"{i + 1}. {destinations[i]}")
+if __name__ == "__main__":
+    main()
